@@ -65,7 +65,7 @@
   </body>
 </html>
 
-*navbar.php (Menu Superior de Navegação)*
+ <!-- navbar.php (Menu Superior de Navegação) -->
 php
 <?php
 echo '<nav class="navbar navbar-expand-lg navbar-light bg-light">';
@@ -84,7 +84,7 @@ echo '    </div>';
 echo '</div>';
 echo '</nav>';
 
-*login.php (Tela de Login)*
+<!-- login.php (Tela de Login) -->
 php
 <?php
 require_once 'navbar.php';
@@ -101,7 +101,7 @@ require_once 'navbar.php';
   </form>
 </div>
 
-*cadastro.php (Tela de Cadastro)*
+<!-- cadastro.php (Tela de Cadastro) -->
 php
 <?php
 require_once 'navbar.php';
