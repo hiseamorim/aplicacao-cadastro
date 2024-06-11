@@ -62,7 +62,25 @@
   </footer>
 </div>
 
-
-    
   </body>
 </html>
+
+*navbar.php (Menu Superior de Navegação)*
+php
+<?php
+echo '<nav class="navbar navbar-expand-lg navbar-light bg-light">';
+echo '  <div class="container">';
+echo '    <a class="navbar-brand" href="#">Aplicação</a>';
+echo '    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">';
+echo '      <span class="navbar-toggler-icon"></span>';
+echo '    </button>';
+echo '    <div class="collapse navbar-collapse" id="navbarSupportedContent">';
+echo '      <ul class="navbar-nav me-auto mb-2 mb-lg-0">';
+echo '        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>';
+echo '        <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>';
+echo '        <li class="nav-item"><a class="nav-link" href="cadastro.php">Cadastro</a></li>';
+echo '      </ul>';
+echo '    </div>';
+echo '</div>';
+echo '</nav>';
+
