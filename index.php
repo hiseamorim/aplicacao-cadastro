@@ -84,3 +84,20 @@ echo '    </div>';
 echo '</div>';
 echo '</nav>';
 
+*login.php (Tela de Login)*
+php
+<?php
+require_once 'navbar.php';
+?>
+
+<div class="container">
+  <h2>Login</h2>
+  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Entrar">
+  </form>
+</div>
+
