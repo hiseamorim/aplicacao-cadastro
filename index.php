@@ -101,3 +101,28 @@ require_once 'navbar.php';
   </form>
 </div>
 
+*cadastro.php (Tela de Cadastro)*
+php
+<?php
+require_once 'navbar.php';
+?>
+
+<div class="container">
+  <h2>Cadastro</h2>
+  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="tipoUser">Tipo de usuário:</label>
+    <select id="tipoUser" name="tipoUser">
+      <option value=1>Administrador</option>
+      <option value=2>Comum</option>
+    </select><br><br>
+    <input type="submit" value="Cadastrar">
+  </form>
+</div>
+
+
