@@ -66,8 +66,7 @@
 </html>
 
  <!-- navbar.php (Menu Superior de Navegação) -->
-php
-<?php
+ <?php
 echo '<nav class="navbar navbar-expand-lg navbar-light bg-light">';
 echo '  <div class="container">';
 echo '    <a class="navbar-brand" href="#">Aplicação</a>';
@@ -83,9 +82,9 @@ echo '      </ul>';
 echo '    </div>';
 echo '</div>';
 echo '</nav>';
+?>
 
 <!-- login.php (Tela de Login) -->
-php
 <?php
 require_once 'navbar.php';
 ?>
@@ -101,8 +100,14 @@ require_once 'navbar.php';
   </form>
 </div>
 
+<?php
+if (isset($_POST['email']) && isset($_POST['password'])) {
+  // Verificar se os dados de login são válidos
+  // ...
+}
+?>
+
 <!-- cadastro.php (Tela de Cadastro) -->
-php
 <?php
 require_once 'navbar.php';
 ?>
@@ -124,5 +129,12 @@ require_once 'navbar.php';
     <input type="submit" value="Cadastrar">
   </form>
 </div>
+
+<?php
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['tipoUser'])) {
+  // Verificar se os dados de cadastro são válidos
+  // ...
+}
+?>
 
 
